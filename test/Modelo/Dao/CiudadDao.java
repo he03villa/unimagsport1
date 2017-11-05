@@ -30,7 +30,7 @@ public class CiudadDao {
         return lis;
     }
     
-    public static Ciudad getDepartamento(String codigo){
+    public static Ciudad getCiudad(String codigo){
         try {
             ArrayList<Ciudad> lis = CiudadDao.Lista();
             for(Ciudad ci: lis) if(ci.getId().equals(codigo)) return ci;
@@ -55,7 +55,7 @@ public class CiudadDao {
     public static String Actualizar(Ciudad ci){
         try {
             ConnectionMySQL con = Conexion.conexion();
-            con.ExecuteQuery(String.format("update ciudad set nombre='%s', descripcion='%s', departamento_id=%d where id=%d", ci.getNombre(),ci.getDescripcion(),Integer.parseInt(ci.getId()),Integer.parseInt(ci.getDepartamento())));
+            con.ExecuteQuery(String.format("update ciudad set nombre='%s', descripcion='%s', departamento_id=%d where id=%d", ci.getNombre(),ci.getDescripcion(),Integer.parseInt(ci.getDepartamento()),Integer.parseInt(ci.getId())));
             if(con.getResultUpdate()>0) return "Los datos se actualizaron";
             con.closeDb();
         } catch (Exception e) {
