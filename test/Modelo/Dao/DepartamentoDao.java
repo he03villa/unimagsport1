@@ -55,7 +55,7 @@ public class DepartamentoDao {
     public static String Actualizar(Departamento de){
         try {
             ConnectionMySQL con = Conexion.conexion();
-            con.ExecuteQuery(String.format("update departamento set nombre='%s', descripcion='%s', pais_id=%d where id=%d", de.getNombre(),de.getDescripcion(),Integer.parseInt(de.getId()),Integer.parseInt(de.getPais())));
+            con.ExecuteQuery(String.format("update departamento set nombre='%s', descripcion='%s', pais_id=%d where id=%d", de.getNombre(),de.getDescripcion(),Integer.parseInt(de.getPais()),Integer.parseInt(de.getId())));
             if(con.getResultUpdate()>0) return "Los datos se actualizaron";
             con.closeDb();
         } catch (Exception e) {
