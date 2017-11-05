@@ -44,7 +44,7 @@ public class DepartamentoDao {
         try {
             ConnectionMySQL con = Conexion.conexion();
             con.ExecuteQuery(String.format("insert into departamento(nombre,descripcion,pais_id) values('%s','%s',%d)", de.getNombre(),de.getDescripcion(),Integer.parseInt(de.getPais())));
-            if(con.getResultUpdate()>0) return "El pais se regitro exitosamente";
+            if(con.getResultUpdate()>0) return "El departamento se regitro exitosamente";
             con.closeDb();
         } catch (Exception e) {
             System.out.println(e.getMessage());
@@ -69,7 +69,7 @@ public class DepartamentoDao {
             ConnectionMySQL con = Conexion.conexion();
             con.ExecuteQuery(String.format("delete from departamento where id=%d", Integer.parseInt(de.getId())));
             con.closeDb();
-            if(con.getResultUpdate()==1) return "El pais se elimino correctamente";
+            if(con.getResultUpdate()==1) return "El departamento se elimino correctamente";
         } catch (Exception e) {
         }
         return "error_1";
