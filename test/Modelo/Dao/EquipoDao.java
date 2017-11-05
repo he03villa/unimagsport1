@@ -49,7 +49,7 @@ public class EquipoDao {
             java.sql.Date fecha1 = new java.sql.Date(fe1.getTime());
             ConnectionMySQL con = Conexion.conexion();
             con.ExecuteQuery(String.format("insert into equipo(nombre,fecha_creacion,foto,descripcion,usuario_id) values('%s','%s','%s','%s',%d)", eq.getNombre(),fecha1,eq.getFoto(),eq.getDescripcion(),Integer.parseInt(eq.getUsuario())));
-            if(con.getResultUpdate()>0) return "El detalle se regitro exitosamente";
+            if(con.getResultUpdate()>0) return "El equipo se registro exitosamente";
             con.closeDb();
         } catch (Exception e) {
             System.out.println(e.getMessage());
@@ -77,7 +77,7 @@ public class EquipoDao {
             ConnectionMySQL con = Conexion.conexion();
             con.ExecuteQuery(String.format("delete from equipo where id=%d", Integer.parseInt(eq.getId())));
             con.closeDb();
-            if(con.getResultUpdate()==1) return "El detalle se elimino correctamente";
+            if(con.getResultUpdate()==1) return "El equipo se elimino correctamente";
         } catch (Exception e) {
         }
         return "error_1";
