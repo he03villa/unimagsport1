@@ -22,8 +22,8 @@ public class TorneoDao {
             ConnectionMySQL con = Conexion.conexion();
             con.ExecuteQuery("select id,nombre,foto,reglas,premio,descripcion,fecha_inicio,fecha_final,numero_equipo,deporte_id from torneo");
             while (con.getResultQuery().next()) {                
-                Torneo re = new Torneo(con.getResultQuery().getString(1), con.getResultQuery().getString(2), con.getResultQuery().getString(3),con.getResultQuery().getString(4),con.getResultQuery().getString(5),con.getResultQuery().getString(6),con.getResultQuery().getString(7),con.getResultQuery().getString(8),con.getResultQuery().getString(9));
-                lis.add(re);
+                Torneo to = new Torneo(con.getResultQuery().getString(1), con.getResultQuery().getString(2), con.getResultQuery().getString(3),con.getResultQuery().getString(4),con.getResultQuery().getString(5),con.getResultQuery().getString(6),con.getResultQuery().getString(7),con.getResultQuery().getString(8),con.getResultQuery().getString(9),con.getResultQuery().getString(10));
+                lis.add(to);
             }
         con.closeDb();
         } catch (Exception e) {
