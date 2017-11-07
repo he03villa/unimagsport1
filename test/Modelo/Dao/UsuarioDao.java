@@ -42,6 +42,16 @@ public class UsuarioDao {
         return null;
     }
     
+    public static Usuario Login(String coreo,String password){
+        try {
+            ArrayList<Usuario> lis = UsuarioDao.Lista();
+            for(Usuario us: lis) if(us.getCorreo().equals(coreo) && us.getPassword().equals(password)) return us;
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+        return null;
+    }
+    
     public static String Insertar(Usuario us){
         try {
             SimpleDateFormat fomr1 = new SimpleDateFormat("yyyy-MM-dd");
