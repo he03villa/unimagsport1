@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unimagdalena Sports</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.11.4/sweetalert2.all.js"></script>
+    
+    <!-- Include a polyfill for ES6 Promises (optional) for IE11 and Android browser -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
+    <script src="../js/mensaje.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.11.4/sweetalert2.css">
+        
+</head>
+<body>
+    <h1>Formulario de registro</h1>
+    <form class="form-register">
+        <h2 class="form__titulo">CREA UNA CUENTA</h2>
+        <div class="contenedor-inputs">
+            <input type="text" name="nombre" placeholder="Nombres">
+            <input type="text" name="apellido" placeholder="Apellidos">
+            <input type="text" name="usuario" placeholder="Usuario">
+            <input type="text" name="fecha" placeholder="Fecha de nacimiento">
+            <input type="text" name="telefono" placeholder="Telefono">
+            <input type="text" name="nit" placeholder="Nit">
+            <input type="text" name="tiponit" placeholder="Tipo de nit">
+            <input type="email" name="direccion" placeholder="Direccion">
+            <input type="text" name="correo" placeholder="Correo">
+            <input type="password" name="contraseña" placeholder="Contraseña">
+            <input type="password" name="confirmarContraseña" placeholder="Confirmar Contraseña">
+            <input type="submit" value="Cancelar">
+        </div>
+        
+    </form>
+    
+    <button onclick="anim();">Registrarse</button>
+    <script type="text/javascript">
+        function anim(){
+            swal(
+              'Te has unido!','Jugador unido al equipo!','success'
+            )
+        }
+    </script>
+</script>
+
+</body>
+</html>

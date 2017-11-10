@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Unimag Sports</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <link href="https://file.myfontastic.com/AE63qBSnxpjeFqhjMnnkMk/icons.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/torneo.css">
+        <link rel="stylesheet" href="css/tabs.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="js/tabs.js"></script>
+        <script src="js/scripts.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.11.4/sweetalert2.all.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.11.4/sweetalert2.css">
+    </head>
+   
+    </style>
+    <body>
+            <header class="main-header">
+                    <div class="l-container">
+                        <a href="#">
+                            <img src="img/escudounimag.png" alt="" class="logo">
+                         </a>
+                      
+                        <div id="toggle-menu" class="icon-bars"></div>
+                      
+                        <nav class="main-nav" id="main-nav">
+                         <ul class="main-menu">
+                             <li class="main-menu__item">
+                              <a href="#" class="main-menu__link">Inicio</a>
+                             </li>
+                             <li class="main-menu__item">
+                              <a href="#" class="main-menu__link">Servicios</a>
+                             </li>
+                             <li class="main-menu__item">
+                                <a href="#" class="main-menu__link">Login</a>
+                             </li>
+                             <li class="main-menu__item">
+                                <a href="#" class="main-menu__link">Contacto</a>
+                             </li>
+                        </ul>
+                      </nav>
+                    </div>
+                </header>
+
+            <div class="contenedor datos-torneo">
+
+                    <div class="datos" >  
+                        <img src="img/usuario.jpg" alt="" class="img-torneo">
+                        
+                    </div>
+                    <div class="datos">
+                            <h2>Nombre del creador del torneo</h2>
+                    </div>
+         
+            </div>
+
+            <div class="banner-torneo">   
+                  
+            </div>
+            <div class="datos-torneo">
+                    <h2>Nombre del torneo</h2>
+                    <button onclick="anim();">Inscribirse</button>
+                    <script type="text/javascript">
+                        function anim(){
+                            swal(
+                              'Inscrito!','Equipo inscrito al torneo!','success'
+                            )
+                        }
+                    </script>
+            </div> 
+            
+            <div class="wrap">
+                <ul class="tabs">
+                    <li><a href="#tab1"><span class="fa fa-home"></span><span class="tab-text">Vistazo General</span></a></li>
+                    <li><a href="#tab2"><span class="fa fa-group"></span><span class="tab-text">Equipos</span></a></li>
+                    <li><a href="#tab3"><span class="fa fa-briefcase"></span><span class="tab-text">Cuadros</span></a></li>
+                </ul>
+                
+                <div class="secciones">
+                    <article id="tab1">
+                         <h1>Inicio</h1>
+                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea numquam odio voluptate. Aliquam incidunt similique, et quasi ducimus quos aut autem non dignissimos dicta sit provident, voluptatibus ut blanditiis perspiciatis cum, vel temporibus minima enim. Asperiores omnis placeat officiis a tenetur sit recusandae, reprehenderit neque. Tempora quibusdam, perferendis id ratione culpa dolorum! Nemo, animi? Eveniet eaque perspiciatis, libero quia, pariatur iusto, ipsum porro quod, ut tempora cum quo non illum. Non eligendi incidunt sequi, molestias quia perspiciatis architecto repudiandae quod.</p>
+                    </article>
+                    <article id="tab2">
+                         <h1>Nosotros</h1>
+                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel voluptates unde, consequuntur aliquid architecto rem numquam expedita minima dolorem pariatur recusandae, eius quod quia aspernatur id impedit, tenetur! Aspernatur incidunt molestiae dolores animi ea praesentium ipsam tenetur voluptas cupiditate perspiciatis eum nihil, natus exercitationem libero earum fuga dignissimos impedit numquam, quasi, placeat officiis voluptates, ad reprehenderit fugiat? Fugiat aperiam et magni, molestiae, numquam consectetur vitae sapiente cupiditate totam laboriosam voluptate obcaecati, aliquam placeat? Suscipit dolores fuga laudantium sed, qui magni iusto dolore quia. Quis fugit exercitationem porro. Rerum nihil omnis recusandae ratione fuga alias eligendi, earum sunt veritatis praesentium eum perspiciatis. Molestias deserunt, iure neque animi quod! Impedit reprehenderit cumque, numquam velit quae cum eius quidem similique laudantium hic deleniti!</p>
+                    </article>
+                    <article id="tab3">
+                         <h1>Servicios</h1>
+                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea numquam odio voluptate. Aliquam incidunt similique, et quasi ducimus quos aut autem non dignissimos dicta sit provident, voluptatibus ut blanditiis perspiciatis cum, vel temporibus minima enim. Asperiores omnis placeat officiis a tenetur sit recusandae, reprehenderit neque. Tempora quibusdam, perferendis id ratione culpa dolorum! Nemo, animi?</p><br>
+                    </article>
+                   
+                </div>
+            </div>
+                
+            <footer class="footer">
+                    <div class="social">
+                        <a href="#" class="icon-instagram"></a>
+                        <a href="#" class="icon-facebook"></a>
+                        <a href="#" class="icon-twitter"></a>
+                    </div>
+                    <p class="copy">&copy; Unimag Sports 2017 - Todos los derechos reservados</p>
+            </footer>
+                    
+            <script src="js/menu.js"></script>     
+    </body>
+</html>

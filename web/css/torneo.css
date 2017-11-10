@@ -1,0 +1,21 @@
+.datos-torneo{
+
+    display: flex;
+    justify-content: space-around;
+}
+.datos{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    width: 200px;
+}
+.img-torneo{
+        width: 100%;
+}
+.banner-torneo{
+
+    background-image: url(../img/torneo.jpg);
+    background-repeat:  no-repeat;
+    background-size: 100%;
+   /*background-color: rgb(255, 0, 0);*/
+   height: 400px;
+}

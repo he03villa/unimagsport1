@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Unimag Sports</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <link href="https://file.myfontastic.com/AE63qBSnxpjeFqhjMnnkMk/icons.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/torneo.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.11.4/sweetalert2.css">
+        <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="js/scripts.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.11.4/sweetalert2.all.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
+        
+    </head>
+   
+    </style>
+    <body>
+            <header class="main-header">
+                    <div class="l-container">
+                        <a href="#">
+                            <img src="img/escudounimag.png" alt="" class="logo">
+                         </a>
+                      
+                        <div id="toggle-menu" class="icon-bars"></div>
+                      
+                        <nav class="main-nav" id="main-nav">
+                         <ul class="main-menu">
+                             <li class="main-menu__item">
+                              <a href="#" class="main-menu__link">Inicio</a>
+                             </li>
+                             <li class="main-menu__item">
+                              <a href="#" class="main-menu__link">Servicios</a>
+                             </li>
+                             <li class="main-menu__item">
+                                <a href="#" class="main-menu__link">Login</a>
+                             </li>
+                             <li class="main-menu__item">
+                                <a href="#" class="main-menu__link">Contacto</a>
+                             </li>
+                        </ul>
+                      </nav>
+                    </div>
+                </header>
+
+                <div class="contenedor datos-torneo">
+                        
+                    <div class="datos equipo" >  
+                        <img src="img/escudounimag.png" alt="" class="img-torneo">
+                    </div>
+                    <div class="datos">
+                        <h2>Nombre del Equipo</h2>
+                    </div>
+                                 
+                </div>
+
+                <button onclick="anim();">Unirse</button>
+                <script type="text/javascript">
+                    function anim(){
+                        swal(
+                          'Te has unido!','Jugador unido al equipo!','success'
+                        )
+                    }
+                </script>
+                <a href="#">Mostral modal</a>
+            
+                <footer class="footer">
+                    <div class="social">
+                        <a href="#" class="icon-instagram"></a>
+                        <a href="#" class="icon-facebook"></a>
+                        <a href="#" class="icon-twitter"></a>
+                    </div>
+                    <p class="copy">&copy; Unimag Sports 2017 - Todos los derechos reservados</p>
+            </footer>  
+            
+    </body>
+</html>
