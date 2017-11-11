@@ -1,7 +1,13 @@
 $(document).ready(function(){
-    $('#boton').click(function(){
-        swal(
-            'Eliminado!','Jugador eliminado del equipo!','success'
-          )
+    $('#futbol').click(function(){
+        $('#res').append('&nbsp;&nbsp;&nbsp;<label>Futbol</label><br/>');
+        swal('Haz agregado','Haz agregado Futbol','success');
+        $("#deporte").modal("hide");
+    });
+    
+    $('#lol').click(function(){
+        $('#res').append('&nbsp;&nbsp;&nbsp;<label>League of Legends</label><br/>');
+        swal('Haz agregado','Haz agregado League of Legends','success');
+        $("#deporte").modal("hide");
     });
 });
