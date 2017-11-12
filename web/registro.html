@@ -5,44 +5,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unimagdalena Sports</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.11.4/sweetalert2.all.js"></script>
-    
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <script src="js/jquery-3.2.1.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
     <!-- Include a polyfill for ES6 Promises (optional) for IE11 and Android browser -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
-    <script src="../js/mensaje.js"></script>
-    
+    <script src="js/mensaje.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.11.4/sweetalert2.css">
         
 </head>
 <body>
-    <h1>Formulario de registro</h1>
-    <form class="form-register">
-        <h2 class="form__titulo">CREA UNA CUENTA</h2>
-        <div class="contenedor-inputs">
-            <input type="text" name="nombre" placeholder="Nombres">
-            <input type="text" name="apellido" placeholder="Apellidos">
-            <input type="text" name="usuario" placeholder="Usuario">
-            <input type="text" name="fecha" placeholder="Fecha de nacimiento">
-            <input type="text" name="telefono" placeholder="Telefono">
-            <input type="text" name="nit" placeholder="Nit">
-            <input type="text" name="tiponit" placeholder="Tipo de nit">
-            <input type="email" name="direccion" placeholder="Direccion">
-            <input type="text" name="correo" placeholder="Correo">
-            <input type="password" name="contraseña" placeholder="Contraseña">
-            <input type="password" name="confirmarContraseña" placeholder="Confirmar Contraseña">
-            <input type="submit" value="Cancelar">
+    <div class="container">
+        <br/>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h1 class="panel-title">Datos personales</h1>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-address-book-o" aria-hidden="true"></i></span>
+                            <input type="text" class="form-control" placeholder="nombre"/>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-address-book-o" aria-hidden="true"></i></span>
+                            <input type="text" class="form-control" placeholder="apellido"/>
+                        </div>
+                    </div>
+                </div>
+                <br/>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                            <input type="date" class="form-control"/>
+                        </div>
+                    </div>
+                </div>
+                <br/>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                            <input type="text" class="form-control" placeholder="Telelfono"/>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-address-book-o" aria-hidden="true"></i></span>
+                            <input type="text" class="form-control" placeholder="Direccion"/>
+                        </div>
+                    </div>
+                </div>
+                <br/>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-address-book-o" aria-hidden="true"></i></span>
+                            <input type="text" class="form-control" placeholder="Nit"/>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-address-book-o" aria-hidden="true"></i></span>
+                            <select class="form-control">
+                                <option></option>
+                                <option>Cedula</option>
+                                <option>Targeta de identida</option>
+                                <option>Tarjeta de extranjeria</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        
-    </form>
-    
-    <button onclick="anim();">Registrarse</button>
-    <script type="text/javascript">
-        function anim(){
-            swal(
-              'Te has unido!','Jugador unido al equipo!','success'
-            )
-        }
-    </script>
-</script>
-
+        <br/>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h1 class="panel-title">Datos de usuario</h1>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></span>
+                            <input type="text" class="form-control" placeholder="Nombre de usuario"/>
+                        </div>
+                    </div>
+                </div>
+                <br/>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-unlock-alt" aria-hidden="true"></i></span>
+                            <input type="password" class="form-control" placeholder="Contraseña"/>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-unlock-alt" aria-hidden="true"></i></span>
+                            <input type="password" class="form-control" placeholder="Confirme contraseña"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="con">
+            <a id="registrar" class="btn btn-default">Registrar</a>
+            <a class="btn btn-default">canselar</a>
+        </div>
+    </div>
 </body>
 </html>
