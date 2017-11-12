@@ -10,4 +10,8 @@ $(document).ready(function(){
         swal('Haz agregado','Haz agregado League of Legends','success');
         $("#deporte").modal("hide");
     });
+    
+    $('#registrar').click(function () {
+        swal('Haz agregado','Los datos se registraron','success');
+    });
 });
